@@ -1,46 +1,52 @@
 .container{
     display: flex;
     justify-content: space-around;
-    background-color:#111827;
-    height: 300px;
+    background-color:#191919;
+    height: 310px;
     padding-top: 20px;
+    border-radius:10px;
+    border:6px solid #c9a227;
 }
 body{
     margin: 120px auto;
-    justify-content: space-around;
     width: 500px;
+    background-color: #B54213;
 }
 h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:rgb(199, 138, 58);
-    margin-left:15px;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(230, 223, 214);
+    margin: 3px auto 25px auto;
+    text-align: center;
+    font-size:39px;
 }
 .score{
     width: 130px;
     height: 110px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background-color: black;
-    margin: 10px auto;
-    color: #F94F6D;
-    font-family:'Digital-7', sans-serif;
-    font-size: 40px;
-    padding:0px;
-    height: 100px;
+    margin:10px auto;
+    color: #c9a227;
+    font-family:"Cursed Timer ULiL";
+    font-size: 60px;
     align-items: center;
-    border-radius: #817779;
+    border-radius: 20px;
+    border: 5px solid #c9a227;
+    padding-top: 5px;
 }
 button{
     width: 35px;
     height: 35px;
-    font-family: Cursed Timer ULiL;
+    font-family:"Cursed Timer ULiL" ;
     font-size: 18px;
     font-weight: 400;
-    line-height: 27.81px;
-    text-align: center;
+    background-color:#191919;
+    border: 1px solid rgb(230, 223, 214);
+    color: rgb(230, 223, 214);;
 }
 #btn4{
-    width: 50px;
+    width: 70px;
+    margin-left: 39px;
 }
 .button{
     display: flex;
@@ -48,7 +54,32 @@ button{
     padding: 10px;
     gap: 2px;
 }
-@font-face {
-    font-family: 'Digital-7';
-    src: url('fonts/digital-7.ttf') format('truetype');
+@font-face{
+    font-family:"Cursed Timer ULiL";
+    src:url("CursedTimerULiL.eot?") 
+    format("eot"),url("CursedTimerULiL.woff") 
+    format("woff"),url("CursedTimerULiL.ttf") 
+    format("truetype"),url("CursedTimerULiL.svg#CursedTimerULiL")
+    format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+.seperator{
+    font-weight: 400px;
+    font-size: 80px;
+    color: aliceblue;
+    margin-top:78px;
+}
+img{
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%); 
+    margin-top: 190px; 
+}
+#basket{
+    margin-top:90px;
+    margin-left: 580px;
+    height: 400px;
 }
