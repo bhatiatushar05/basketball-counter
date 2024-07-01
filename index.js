@@ -1,39 +1,25 @@
 let team1 = document.getElementById("team1")
 let team2 = document.getElementById("team2")
-let count = 0
+let count = {
+    team1: 0,
+    team2: 0
+};
 function add1(teamId) {
-    if (teamId === "team1") {
-        count += 1;
-        document.getElementById(teamId).textContent = count;
-    } else if (teamId === "team2") {
-        count += 1;
-        document.getElementById(teamId).textContent = count;
-    }
+    count[teamId] += 1;
+    document.getElementById(teamId).textContent = count[teamId];
 }
+
 function add2(teamId) {
-    if (teamId === "team1") {
-        count += 2;
-        document.getElementById(teamId).textContent = count;
-    } else if (teamId === "team2") {
-        count += 2;
-        document.getElementById(teamId).textContent = count;
-    }
+    count[teamId] += 2;
+    document.getElementById(teamId).textContent = count[teamId];
 }
+
 function add3(teamId) {
-    if (teamId === "team1") {
-        count += 3;
-        document.getElementById(teamId).textContent = count;
-    } else if (teamId === "team2") {
-        count += 3;
-        document.getElementById(teamId).textContent = count;
-    }
+    count[teamId] += 3;
+    document.getElementById(teamId).textContent = count[teamId];
 }
+
 function res(teamId) {
-    if (teamId === "team1") {
-        count = 0;
-        document.getElementById(teamId).textContent = count;
-    } else if (teamId === "team2") {
-        count = 0;
-        document.getElementById(teamId).textContent = count;
-    }
+    count[teamId] = 0;
+    document.getElementById(teamId).textContent = count[teamId];
 }
